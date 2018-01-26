@@ -69,7 +69,7 @@ calico_policy_image_repo: "registry.cn-hangzhou.aliyuncs.com/liuq/calico-kube-co
 calico_policy_image_tag: "{{ calico_policy_version }}"
 calico_rr_image_repo: "registry.cn-hangzhou.aliyuncs.com/liuq/calico-routereflector"
 calico_rr_image_tag: "{{ calico_rr_version }}"
-hyperkube_image_repo: "quay.io/coreos/hyperkube"
+hyperkube_image_repo: "registry.cn-hangzhou.aliyuncs.com/liuq/coreos-hyperkube"
 hyperkube_image_tag: "{{ kube_version }}_coreos.0"
 pod_infra_image_repo: "registry.cn-hangzhou.aliyuncs.com/liuq/pause-amd64"
 pod_infra_image_tag: "{{ pod_infra_version }}"
