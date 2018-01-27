@@ -1,14 +1,14 @@
-ip-172-31-28-1 ansible_ssh_host=172.31.28.1 ansible_user=centos
-ip-172-31-28-2 ansible_ssh_host=172.31.28.2 ansible_user=centos
+ip-172-31-28-103 ansible_ssh_host=172.31.28.103 ansible_user=centos
+ip-172-31-28-101 ansible_ssh_host=172.31.28.101 ansible_user=centos
 
 [kube-master]
-ip-172-31-28-2
+ip-172-31-28-103
 
 [etcd]
-ip-172-31-28-2
+ip-172-31-28-103
 
 [kube-node]
-ip-172-31-28-1
+ip-172-31-28-101
 
 [k8s-cluster:children]
 kube-node
