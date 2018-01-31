@@ -4,8 +4,8 @@
   remote_user: yqg
   gather_facts: no
   tasks:
-    - name: file -s /dev/xvdf 
-      shell: file -s /dev/xvdf 
+    - name: file -s /dev/xvdb
+      shell: file -s /dev/xvdb
       become: true
       become_user: root
 
@@ -18,18 +18,18 @@
       become: true
       become_user: root
 
-    - name: mkfs -t ext4 /dev/xvdf
-      shell: mkfs -t ext4 /dev/xvdf
+    - name: mkfs -t ext4 /dev/xvdb
+      shell: mkfs -t ext4 /dev/xvdb
       become: true
       become_user: root
 
-    - name: mount /dev/xvdf /data
-      shell: mount /dev/xvdf /data
+    - name: mount /dev/xvdb /data
+      shell: mount /dev/xvdb /data
       become: true
       become_user: root
 
-    - name: echo '\n/dev/xvdf /data ext4 defaults 0 0' >> /etc/fstab
-      shell: echo '\n/dev/xvdf /data ext4 defaults 0 0' >> /etc/fstab
+    - name: echo '\n/dev/xvdb /data ext4 defaults 0 0' >> /etc/fstab
+      shell: echo '\n/dev/xvdb /data ext4 defaults 0 0' >> /etc/fstab
       become: true
       become_user: root
       
